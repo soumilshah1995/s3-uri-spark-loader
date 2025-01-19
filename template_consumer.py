@@ -129,10 +129,7 @@ def process_message(messages, input_config, spark):
 def main():
     event = {
         "spark": {
-            "spark.app.name": "hudi",
-            "spark.jars.packages": "org.apache.hudi:hudi-spark3.4-bundle_2.12:0.14.0,org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.773",
-            "spark.serializer":"org.apache.spark.serializer.KryoSerializer",
-            "spark.sql.extensions": 'org.apache.spark.sql.hudi.HoodieSparkSessionExtension',
+              "spark.app.name": "pysparksqspoller",
         },
         "input_config": {
             "protocol": "s3a",
